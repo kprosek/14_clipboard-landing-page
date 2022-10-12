@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="images/favicon-32x32.png" />
 
@@ -11,19 +19,20 @@
   </head>
   <body>
     <header>
-      <img src="images/logo.svg" alt="logo" />
+      <img class="header-logo" src="images/logo.svg" alt="logo" />
       <article class="header-container">
         <h1>A history of everything you copy</h1>
         <p class="paragraph-regular">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <div class="header-download-links">
+        <div class="download-links">
           <a class="btn green" href="#">Download for iOS</a>
           <a class="btn blue" href="#">Download for Mac</a>
         </div>
       </article>
     </header>
+
     <main>
       <section class="section-one">
         <h2>Keep track of your snippets</h2>
@@ -32,24 +41,29 @@
           can access your snippets immediately on all your devices. Our Mac and
           iOS apps will help you organize everything.
         </p>
-        <img
-          class="img-computer"
-          src="images/image-computer.png"
-          alt="image of a computer screen"
-        />
-        <h3>Quick Search</h3>
-        <p class="paragraph-regular">
-          Easily search your snippets by content, category, web address,
-          application, and more.
-        </p>
-        <h3>iCloud Sync</h3>
-        <p class="paragraph-regular">
-          Instantly saves and syncs snippets across all your devices.
-        </p>
-        <h3>Complete History</h3>
-        <p class="paragraph-regular">
-          Retrieve any snippets from the first moment you started using the app.
-        </p>
+        <div class="section-one-content">
+          <img
+            class="img-computer"
+            src="images/image-computer.png"
+            alt="image of a computer screen"
+          />
+          <div class="section-one-benefits">
+            <h3>Quick Search</h3>
+            <p class="paragraph-regular">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+            <h3>iCloud Sync</h3>
+            <p class="paragraph-regular">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+            <h3>Complete History</h3>
+            <p class="paragraph-regular">
+              Retrieve any snippets from the first moment you started using the
+              app.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="section-two">
@@ -58,44 +72,52 @@
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
+
         <img
           class="img-devices"
           src="images/image-devices.png"
           alt="image of a computer screen"
         />
+
         <h3>Supercharge your workflow</h3>
         <p class="paragraph-regular">
           We’ve got the tools to boost your productivity.
         </p>
 
-        <article class="tools-list">
-          <img
-            class="icons"
-            src="images/icon-blacklist.svg"
-            alt="blacklist icon"
-          />
-          <h4>Create blacklists</h4>
-          <p class="paragraph-regular">
-            Ensure sensitive information never makes its way to your clipboard
-            by excluding certain sources.
-          </p>
-        </article>
+        <div class="section-two-content">
+          <article class="tools-list">
+            <img
+              class="icons"
+              src="images/icon-blacklist.svg"
+              alt="blacklist icon"
+            />
+            <h4>Create blacklists</h4>
+            <p class="paragraph-regular">
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </article>
 
-        <article class="tools-list">
-          <img class="icons" src="images/icon-text.svg" alt="text icon" />
-          <h4>Plain text snippets</h4>
-          <p class="paragraph-regular">
-            Remove unwanted formatting from copied text for a consistent look.
-          </p>
-        </article>
+          <article class="tools-list">
+            <img class="icons" src="images/icon-text.svg" alt="text icon" />
+            <h4>Plain text snippets</h4>
+            <p class="paragraph-regular">
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </article>
 
-        <article class="tools-list">
-          <img class="icons" src="images/icon-preview.svg" alt="preview icon" />
-          <h4>Sneak preview</h4>
-          <p class="paragraph-regular">
-            Quick preview of all snippets on your Clipboard for easy access.
-          </p>
-        </article>
+          <article class="tools-list">
+            <img
+              class="icons"
+              src="images/icon-preview.svg"
+              alt="preview icon"
+            />
+            <h4>Sneak preview</h4>
+            <p class="paragraph-regular">
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section-three">
@@ -120,21 +142,38 @@
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
-        <a class="btn green" href="#">Download for iOS</a>
-        <a class="btn blue" href="#">Download for Mac</a>
+        <div class="download-links">
+          <a class="btn green" href="#">Download for iOS</a>
+          <a class="btn blue" href="#">Download for Mac</a>
+        </div>
       </section>
     </main>
+
     <footer>
-      <img class="logo-footer" src="images/logo.svg" alt="logo" />
-      <p>FAQs</p>
-      <p>Contact Us</p>
-      <p>Privacy Policy</p>
-      <p>Press Kit</p>
-      <p>Install Guide</p>
-      <div class="footer-icons">
-        <img src="images/icon-facebook.svg" alt="logo facebook" />
-        <img src="images/icon-twitter.svg" alt="logo twitter" />
-        <img src="images/icon-instagram.svg" alt="logo instagram" />
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <img class="footer-logo" src="images/logo.svg" alt="logo" />
+        </div>
+
+        <nav class="footer-nav">
+          <a class="footer-link" href="#">FAQs</a>
+          <a class="footer-link" href="#">Contact Us</a>
+          <a class="footer-link" href="#">Privacy Policy</a>
+          <a class="footer-link" href="#">Press Kit</a>
+          <a class="footer-link" href="#">Install Guide</a>
+        </nav>
+
+        <div class="footer-icons-container">
+          <a class="footer-icons" aria-label="link to facebook page" href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a class="footer-icons" aria-label="link to twitter page" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="footer-icons" aria-label="link to instagram page" href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
