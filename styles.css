@@ -50,7 +50,9 @@ h4 {
   margin-top: 0;
 }
 
-.btn {
+.btn-header,
+.btn-section-four {
+  display: inline-block;
   border-radius: 2em;
   padding: 1em;
   width: 90%;
@@ -60,7 +62,8 @@ h4 {
   color: white;
 }
 
-.btn:hover {
+.btn-header:hover,
+.btn-section-four:hover {
   opacity: 0.8;
 }
 
@@ -108,14 +111,6 @@ h4 {
     width: 100%;
     font-size: 1rem;
   }
-
-  .green {
-    width: 40%;
-  }
-
-  .blue {
-    width: 40%;
-  }
 }
 
 /* HEADER */
@@ -144,13 +139,14 @@ header img {
 }
 
 .download-links {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 375px) {
   header {
     max-width: 1800px;
 
@@ -166,12 +162,23 @@ header img {
   .header-container {
     width: 50%;
   }
+}
 
-  .download-links {
+@media (min-width: 1200px) {
+  .header-download-links {
+    display: flex;
     flex-direction: row;
     margin: 0 auto;
     justify-content: space-between;
     max-width: 60%;
+  }
+
+  .btn-header.green {
+    width: 40%;
+  }
+
+  .btn-header.blue {
+    width: 40%;
   }
 }
 
@@ -238,7 +245,7 @@ main {
 
     margin-top: 4rem;
     position: relative;
-    left: -10vw;
+    left: -15vw;
   }
 
   .section-one-benefits {
