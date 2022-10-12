@@ -146,7 +146,7 @@ header img {
   justify-content: center;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   header {
     max-width: 1800px;
 
@@ -225,6 +225,10 @@ main {
   margin-top: 5rem;
 }
 
+.btn-section-four {
+  width: 90%;
+}
+
 @media (min-width: 800px) {
   main {
     max-width: 1800px;
@@ -285,6 +289,23 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-four-download-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 45%;
+    text-align: center;
+  }
+
+  .btn-section-four {
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 205px;
   }
 }
 
