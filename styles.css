@@ -52,6 +52,11 @@ h4 {
   color: var(--grayish-blue);
   line-height: 1.75rem;
   margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.section-four .paragraph-regular {
+  margin-bottom: 0;
 }
 
 .btn-download {
@@ -111,6 +116,7 @@ header img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
 /* MAIN */
@@ -152,15 +158,18 @@ main {
 .img-computer {
   width: 100%;
   display: cover;
+  margin-bottom: 3.5rem;
 }
 
 .img-devices {
   width: 100%;
+  margin-bottom: 5rem;
 }
 
 .icons {
   width: 38px;
   height: 30px;
+  margin-bottom: 1.5rem;
 }
 
 .logos {
@@ -226,6 +235,10 @@ footer {
     margin-bottom: 0.5rem;
   }
 
+  h4 {
+    margin-bottom: 1rem;
+  }
+
   .paragraph-regular {
     font-size: 1.25rem;
     width: 50%;
@@ -264,6 +277,7 @@ footer {
   .btn-download {
     width: 45%;
     max-width: 200px;
+    margin-top: 3rem;
   }
 }
 
@@ -279,7 +293,7 @@ footer {
   }
 
   header img {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .header-container {
@@ -345,10 +359,18 @@ footer {
     margin-left: 0;
   }
 
+  .icons {
+    margin-bottom: 2.3rem;
+  }
+
   .section-three {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .logos {
+    margin-top: 4rem;
   }
 }
 
